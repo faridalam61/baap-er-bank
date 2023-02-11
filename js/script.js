@@ -5,7 +5,7 @@ const loginBtn = document.getElementById('login-btn')
 loginBtn.addEventListener('click', function () {
   
     if (userEmail.value == 'faridalam62@gmail.com' && userPass.value == '123456789') {
-    window.location = '/bank.html';
+    window.location = './bank.html';
 } else {
     alert('Invalid user')
 }
