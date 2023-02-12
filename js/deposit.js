@@ -19,6 +19,7 @@ depositButton.addEventListener('click',function(){
 
 
     }else{
+        amountInput.value = '';
         alert('Enter a valid amount');
     }
 })

@@ -19,6 +19,7 @@ withdrawButton.addEventListener('click',function(){
         
 
     }else{
+        withdrawAmount.value = '';
         alert('Unable to process your request :)');
     }
 })
