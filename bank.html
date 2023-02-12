@@ -12,37 +12,38 @@
         <h1 class="text-center text-4xl font-semibold mt-12">Let's get some <span class="text-violet-600">Mooooooooooney!!</span></h1>
     </header>
     <main>
-        <div class="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-            <div class="bg-green-400 text-white rounded p-6">
+        <div class="w-3/5 mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+            <div class="bg-green-400 text-white rounded-xl md:rounded p-8 md:p-6">
                 <h3 class="text-xl">Deposit</h3>
-                <p class="text-2xl" id="deposit">$50</p>
+                <p class="text-3xl">$<span id="deposit">0</span></p>
             </div>
-            <div class="bg-orange-400 text-white rounded p-6">
+            <div class="bg-orange-400 text-white rounded-xl md:rounded p-8 md:p-6">
                 <h3 class="text-xl">Withdrawn</h3>
-                <p class="text-2xl" id="deposit">$100</p>
+                <p class="text-3xl">$<span id="withdraw">0</span></p>
             </div>
-            <div class="bg-violet-500 text-white rounded p-6">
+            <div class="bg-violet-500 text-white rounded-xl md:rounded p-8 md:p-6">
                 <h3 class="text-xl">Balance</h3>
-                <p class="text-2xl" id="deposit">$1200</p>
+                <p class="text-3xl">$<span id="balance">0</span></p>
             </div>
         </div>
 
-        <div class="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
+        <div class="w-3/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
             <div class="bg-teal-400 text-white rounded p-6 md:p-10">
                 <h3 class="text-2xl">Please Deposit</h3>
-                <input type="number" placeholder="Enter amount" class="p-2 rounded w-full my-6 outline-0 text-black">
-                <input type="button" value="Deposit" class="bg-orange-400 hover:bg-orange-500 cursor-pointer py-2 px-6 rounded">
+                <input type="number" placeholder="Enter amount" class="p-2 rounded w-full my-6 outline-0 text-black" id="amountInput">
+                <input type="button" value="Deposit" class="bg-orange-400 hover:bg-orange-500 cursor-pointer py-2 px-6 rounded" id="depositBtn">
             </div>
             <div class="bg-fuchsia-300 text-white rounded p-6 md:p-10">
                 <h3 class="text-2xl">Make Withdrawal</h3>
-                <input type="number" placeholder="Enter amount" class="p-2 rounded w-full my-6 outline-0 text-black">
-                <input type="button" value="Deposit" class="bg-orange-400 hover:bg-orange-500 cursor-pointer py-2 px-6 rounded">
+                <input type="number" placeholder="Enter amount" class="p-2 rounded w-full my-6 outline-0 text-black" id="withdrawAmount">
+                <input type="button" value="Deposit" class="bg-orange-400 hover:bg-orange-500 cursor-pointer py-2 px-6 rounded" id="withdrawBtn">
             </div>
            
            
         </div>
     </main>
     
-    <script src="js/script.js"></script>
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
 </body>
 </html>
